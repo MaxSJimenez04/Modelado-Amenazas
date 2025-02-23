@@ -23,8 +23,8 @@
         "cells": [
           {
             "position": {
-              "x": 320,
-              "y": 100
+              "x": 330,
+              "y": 90
             },
             "size": {
               "width": 112.5,
@@ -158,7 +158,7 @@
           {
             "position": {
               "x": 578,
-              "y": 100
+              "y": 90
             },
             "size": {
               "width": 112.5,
@@ -169,8 +169,8 @@
                 "text": "Bibliotecario"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -263,12 +263,37 @@
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
-              "description": "",
+              "description": "(4) Bibliotecario.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "dbb0d1df-d4cb-470f-aea8-e6c8b19a49a7",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "1. Mecanismo de autenticación\n2. Proteger datos confidenciales",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -290,7 +315,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Límite Usuario",
+                    "text": "Límite Usuario/ Servidor Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -314,7 +339,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Límite Usuario",
+              "name": "Límite Usuario/ Servidor Web",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -334,12 +359,12 @@
                 "y": 170
               },
               {
-                "x": 520,
+                "x": 530,
                 "y": 190
               },
               {
-                "x": 770,
-                "y": 160
+                "x": 780,
+                "y": 170
               }
             ]
           },
@@ -468,6 +493,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 17
+    "threatTop": 18
   }
 }
