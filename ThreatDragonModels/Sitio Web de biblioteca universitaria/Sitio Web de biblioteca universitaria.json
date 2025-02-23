@@ -868,7 +868,7 @@
                 "sourceMarker": {
                   "name": ""
                 },
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "width": 200,
@@ -913,8 +913,8 @@
             "data": {
               "type": "tm.Flow",
               "name": "Lee app config",
-              "description": "",
-              "outOfScope": false,
+              "description": "Archivo físico de configuración leído desde el disco.",
+              "outOfScope": true,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
