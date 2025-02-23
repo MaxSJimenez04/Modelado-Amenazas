@@ -1,0 +1,16 @@
+{
+  "version": "2.4.0",
+  "summary": {
+    "title": "Sitio Web de biblioteca universitaria",
+    "owner": "Programación Segura",
+    "description": "Este reporte presenta el análisis de seguridad y modelado de amenazas para un sistema web de biblioteca universitaria. El sistema permite a los estudiantes y docentes realizar préstamos de libros, consultar el catálogo en línea y gestionar su historial de préstamos. Además, los administradores pueden gestionar inventarios y usuarios. El modelado de amenazas se basa en la metodología STRIDE, identificando posibles vulnerabilidades en seis categorías: suplantación de identidad (Spoofing), manipulación de datos (Tampering), repudio (Repudiation), divulgación de información (Information Disclosure), denegación de servicio (Denial of Service) y elevación de privilegios (Elevation of Privilege).",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Guillermo Vera",
+    "threatTop": 0
+  }
+}
