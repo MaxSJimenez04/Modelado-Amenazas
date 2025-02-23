@@ -32,11 +32,11 @@
             },
             "attrs": {
               "text": {
-                "text": "Usuario"
+                "text": "Usuarios"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -128,13 +128,31 @@
             "id": "14869457-8ba5-4986-8ce8-320e9bde372d",
             "data": {
               "type": "tm.Actor",
-              "name": "Usuario",
-              "description": "",
+              "name": "Usuarios",
+              "description": "(1) Usuario web anónimo.\n(2) Usuario con credenciales de inicio de sesión válidas.\n(3) Usuario con credenciales de inicio de sesión no válidas",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "cda5b627-ff2c-46e2-8c48-0d1aece03991",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Amenaza destinada a acceder y utilizar las credenciales de otros usuario como el nombre de usuario y contraseña",
+                  "mitigation": "1. Mecanismo de autenticación\n2. Proteger datos confidenciales",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -272,7 +290,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Trust Boundary",
+                    "text": "Límite Usuario",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -296,7 +314,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Límite Usuario",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -346,6 +364,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -429,7 +448,6 @@
               ]
             },
             "id": "82f8f0d2-5dd5-47d6-b789-280e5d26f988",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Hola",
@@ -450,6 +468,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 16
+    "threatTop": 17
   }
 }
