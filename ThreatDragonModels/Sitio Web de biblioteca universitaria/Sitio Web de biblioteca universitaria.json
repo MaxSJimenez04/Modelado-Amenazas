@@ -1374,11 +1374,13 @@
                 "text": "Páginas Web"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1474,7 +1476,7 @@
               "description": "Páginas físicas almacenadas en el disco.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
@@ -1484,7 +1486,7 @@
                 {
                   "id": "ed01614c-52f8-4f6f-872c-580457a34e00",
                   "title": "Modificación sin autorización",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "High",
                   "type": "Tampering",
                   "description": "Un atacante podría modificar las páginas web sin autorización.",
@@ -1496,11 +1498,18 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
