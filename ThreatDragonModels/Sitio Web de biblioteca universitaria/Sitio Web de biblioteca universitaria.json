@@ -147,11 +147,24 @@
                   "new": false,
                   "number": 17,
                   "score": ""
+                },
+                {
+                  "id": "d0dd6be3-b939-4371-aa7a-0273bf86eede",
+                  "title": "Acciones maliciosas",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": " Un usuario podría realizar una acción maliciosa (como eliminar registros) y negar haberlo hecho.",
+                  "mitigation": "1. Implementar registros de auditoría detallados. \n2. Usar logs con marcas de tiempo y direcciones IP.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "repudiation": 0
+                "repudiation": 1
               }
             }
           },
@@ -1814,6 +1827,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 29
+    "threatTop": 31
   }
 }
