@@ -7,7 +7,11 @@
     "id": 0
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "Maximiliano Soto"
+      }
+    ],
     "diagrams": [],
     "diagramTop": 0,
     "reviewer": "Guillermo Vera",
