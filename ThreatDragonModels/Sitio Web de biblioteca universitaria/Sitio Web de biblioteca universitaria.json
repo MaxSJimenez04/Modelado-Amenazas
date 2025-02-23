@@ -397,7 +397,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados de consultas",
+                    "text": "Páginas",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -605,7 +605,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados de consultas",
+                    "text": "Páginas",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -812,7 +812,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados de consultas",
+                    "text": "Páginas",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -971,7 +971,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados de consultas",
+                    "text": "Páginas",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1806,13 +1806,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ],
