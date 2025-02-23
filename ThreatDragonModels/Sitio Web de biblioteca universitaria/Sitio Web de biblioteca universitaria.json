@@ -356,6 +356,10 @@
                 "y": 190
               },
               {
+                "x": 600,
+                "y": 190
+              },
+              {
                 "x": 780,
                 "y": 170
               }
@@ -393,7 +397,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Petición Web",
+                    "text": "Respuesta web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -499,7 +503,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Petición Web",
+                    "text": "Respuesta web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -601,7 +605,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Petición Web",
+                    "text": "Respuesta web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -663,7 +667,119 @@
             "target": {
               "x": 590,
               "y": 300
-            }
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 200
+              },
+              {
+                "x": 590,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Respuesta web",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta web",
+              "description": "Respuestas enviadas por la aplicación hacia los bibliotecarios.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "85bca918-b978-4f16-85d4-f8c217b1e298",
+                  "title": "El flujo de datos debe ser por HTTP/S",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Las respuestas se transmiten por internet público, por lo que podrían ser interceptadas por un atacante",
+                  "mitigation": "Las solicitudes deben solicitar HTTP/S. HTTP no debería ser compatible",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "3464b293-112c-4575-9146-43f39a7b43d6",
+            "source": {
+              "cell": "82f8f0d2-5dd5-47d6-b789-280e5d26f988",
+              "port": "fc69b052-ccf9-4a55-bbaa-de7352fd7ff4"
+            },
+            "target": {
+              "cell": "21b9b28c-1c20-41c4-81ac-c8a38453d906",
+              "port": "db61d1b5-5e0f-4f21-8725-5b63e6c33862"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 260
+              }
+            ]
           },
           {
             "position": {
@@ -812,6 +928,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 22
+    "threatTop": 23
   }
 }
