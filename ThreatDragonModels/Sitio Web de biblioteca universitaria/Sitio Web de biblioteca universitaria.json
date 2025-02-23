@@ -1384,6 +1384,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1467,7 +1468,6 @@
               ]
             },
             "id": "68ecc404-3ae1-4336-b0e6-aec9247b2392",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Páginas Web",
@@ -1501,13 +1501,6 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1534,6 +1527,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1617,7 +1611,6 @@
               ]
             },
             "id": "900d7cb8-e0ef-4709-ad73-bdd2955a9744",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -1657,6 +1650,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1740,7 +1734,6 @@
               ]
             },
             "id": "65895b2d-c6e6-43ce-bc5c-022d12d09180",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "Web App config ",
