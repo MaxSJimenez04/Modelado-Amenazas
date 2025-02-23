@@ -393,7 +393,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Respuesta Web",
+                    "text": "Petición Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -499,7 +499,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Respuesta Web",
+                    "text": "Petición Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -568,6 +568,102 @@
                 "y": 260
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Petición Web",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Petición Web",
+              "description": "Respuestas recibidas por la aplicación hacia los bibliotecarios.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "fa21d0a3-1aac-484c-97a7-885c0f1ddb25",
+                  "title": "El flujo de datos debe usar HTTP/S",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Las solicitudes se transmiten por internet pública y pueden ser interceptadas por un atacante",
+                  "mitigation": "Las solicitudes deben solicitar HTTP/S. HTTP no debería ser compatible",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "2ec895f0-fa77-4e70-9390-421e7d9fea1e",
+            "source": {
+              "x": 600,
+              "y": 150
+            },
+            "target": {
+              "x": 590,
+              "y": 300
+            }
           },
           {
             "position": {
@@ -716,6 +812,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 21
+    "threatTop": 22
   }
 }
