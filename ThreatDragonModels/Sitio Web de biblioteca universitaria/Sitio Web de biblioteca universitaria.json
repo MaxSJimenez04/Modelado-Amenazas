@@ -42,6 +42,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -125,7 +126,6 @@
               ]
             },
             "id": "14869457-8ba5-4986-8ce8-320e9bde372d",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Usuario",
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +242,6 @@
               ]
             },
             "id": "21b9b28c-1c20-41c4-81ac-c8a38453d906",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
