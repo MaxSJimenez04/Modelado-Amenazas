@@ -1,5 +1,5 @@
 {
-  "version": "2.4.0",
+  "version": "2.3.0",
   "summary": {
     "title": "Sitio Web de biblioteca universitaria",
     "owner": "Programación Segura",
@@ -1823,9 +1823,18 @@
           }
         ],
         "description": "Diagrama de flujo de datos para el sitio web de la biblioteca universitaria"
+      },
+      {
+        "id": 1,
+        "title": "Flujo de datos de inicio de sesión del sistema biblioteca",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.3.0",
+        "cells": []
       }
     ],
-    "diagramTop": 1,
+    "diagramTop": 2,
     "reviewer": "Guillermo Vera",
     "threatTop": 31
   }
