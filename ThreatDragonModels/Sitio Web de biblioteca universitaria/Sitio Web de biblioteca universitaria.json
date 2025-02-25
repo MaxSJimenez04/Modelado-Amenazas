@@ -1846,8 +1846,8 @@
                 "text": "Usuario"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1940,12 +1940,30 @@
             "data": {
               "type": "tm.Actor",
               "name": "Usuario",
-              "description": "",
+              "description": "(1) Usuario web anónimo.\n(2) Usuario con credenciales de inicio de sesión válidas.\n(3) Usuario con credenciales de inicio de sesión no válidas.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "f1550369-56e6-4302-859f-2390eb9e382a",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Amenaza dedicada a acceder, obtener y utilizar las credenciales de otro usuario como nombre de usuario y contraseña",
+                  "mitigation": "1. Mecanismos de autenticación\n2. Cifrado de datos sensibles y/o críticos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -2043,7 +2061,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Vistas",
+                    "text": "Petición Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2129,7 +2147,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Vistas",
+                    "text": "Petición Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2291,7 +2309,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Respuesta a consulta SQL de usuario autenticado",
+                    "text": "Petición Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2377,7 +2395,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Respuesta a consulta SQL de usuario autenticado",
+                    "text": "Petición Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2531,7 +2549,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Respuesta a consulta SQL de usuario autenticado",
+                    "text": "Petición Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2613,7 +2631,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Respuesta a consulta SQL de usuario autenticado",
+                    "text": "Petición Web",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -3157,6 +3175,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Guillermo Vera",
-    "threatTop": 31
+    "threatTop": 32
   }
 }
